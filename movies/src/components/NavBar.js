@@ -6,10 +6,10 @@ const NavBar = () => {
       <div>
         <Navbar variant='dark'>
             <Container>
-                <Navbar.Brand>iMOVIES</Navbar.Brand>
+                <Navbar.Brand href='/'>iMOVIES</Navbar.Brand>
                 <Nav>
-                    <Nav.Link>Trending</Nav.Link>
-                    <Nav.Link>Superhero</Nav.Link>
+                    <Nav.Link href='#trending'>Trending</Nav.Link>
+                    <Nav.Link href='#superhero'>Superhero</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

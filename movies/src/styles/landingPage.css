@@ -18,3 +18,29 @@
     text-shadow: 2px 2px black;
     letter-spacing: 4px;
 }
+
+.trending{
+    height: auto;
+    background: url("../assets/superhero/batman.jpg");
+    background-size: cover;
+}
+
+.movieImage{
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.movieWrapper{
+
+}
+
+.images{
+    height: 500px;
+}
+
+.superhero{
+    height: auto;
+    background: url("../assets/bg/spiderman.jpg");
+    background-size: cover;
+}

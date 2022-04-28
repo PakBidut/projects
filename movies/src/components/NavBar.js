@@ -1,0 +1,20 @@
+import {Navbar, Container, Nav} from 'react-bootstrap' 
+
+
+const NavBar = () => {
+  return (
+      <div>
+        <Navbar>
+            <Container>
+                <Navbar.Brand>iMOVIES</Navbar.Brand>
+                <Nav>
+                    <Nav.Link>Trending</Nav.Link>
+                    <Nav.Link>Superhero</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
+      </div>
+  )
+}
+
+export default NavBar;

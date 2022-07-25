@@ -244,10 +244,12 @@ nav img{
 
     .sudah-dibaca{
         min-width: 400px;
+        max-width: 400px;
     }
 
     .belum-dibaca{
         min-width: 400px;
+        max-width: 400px;
     }
 
     .modal-content{

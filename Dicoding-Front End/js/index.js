@@ -57,17 +57,7 @@ const displayBooks = () => {
 
     let btnHapus = document.createElement("input");
     let modal = document.querySelector(".modal");
-// ----------------------------------------------------------------------------------------------------------------------------
 
-    // YG INI YANG WORK JOHNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN (base)
-    // btnHapus.addEventListener("click", () => {
-    //   save.splice(index,1);
-    //   localStorage.setItem("book", JSON.stringify(...arr));
-    //   clearOutput();
-    //   displayBooks();
-    // })
-
-    // INI AMAN JOHNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
     btnHapus.addEventListener("click", () => {
       modal.style.display = "block";
       let iya = document.querySelector("#iyah");
@@ -87,7 +77,7 @@ const displayBooks = () => {
     btnHapus.type = "button";
     btnHapus.className = "btn-hapus";
     btnHapus.id = "btnHapus";
-// ---------------------------------------------------------------------------------------------------------------------------
+
     title.innerText = data.title;
     author.innerText = `Author : ${data.author}`;
     year.innerText = `Years : ${data.year}`;
@@ -211,7 +201,6 @@ const searchBooks = () => {
           displayBooks();
         });
         btnHapus.value = "Hapus";
-        // sudah.appendChild(itemContainer);
         searchResult.appendChild(itemContainer);
         itemContainer.appendChild(title);
         itemContainer.appendChild(author);
@@ -230,7 +219,6 @@ const searchBooks = () => {
           displayBooks();
         });
         btnHapus.value = "Hapus";
-        // belum.appendChild(itemContainer);
         searchResult.appendChild(itemContainer);
         itemContainer.appendChild(title);
         itemContainer.appendChild(author);

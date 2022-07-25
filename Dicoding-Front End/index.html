@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookshelf App</title>
+    <title>BukuKu</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +16,11 @@
   <body>
     <header>
       <nav>
-        <h1>Bookshelf App</h1>
+        <a href="#"><img src="assets/logo.png" alt="" srcset="" /></a>
       </nav>
     </header>
     <main class="container">
-      <form class="add-buku">
+      <div class="add-buku">
         <h3 id="title">Masukan Buku!</h3>
         <div class="judul">
           <label for="judul">Judul</label>
@@ -44,23 +44,17 @@
           type="submit"
           value="Masukan Buku!"
         />
-      </form>
-      <form class="search">
+      </div>
+      <div class="search">
         <h3>Cari</h3>
-        <input
-          type="search"
-          name=""
-          id="judulBuku"
-          placeholder="Judul"
-          required
-        />
+        <input type="text" name="" id="judulBuku" placeholder="Judul" />
         <input
           onclick="searchBooks()"
           type="submit"
           value="Cari Buku!"
           id="cari"
         />
-      </form>
+      </div>
       <div class="sudah-dibaca">
         <h3>Sudah Dibaca</h3>
       </div>

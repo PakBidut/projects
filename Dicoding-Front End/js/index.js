@@ -57,25 +57,37 @@ const displayBooks = () => {
 
     let btnHapus = document.createElement("input");
     let modal = document.querySelector(".modal");
-    let iya = document.querySelector("#iyah");
-    iya.addEventListener("click", () => {
-      clearOutput();
-      save.splice(index, 1);
-      localStorage.setItem("book", JSON.stringify(...arr));
-      displayBooks();
-      modal.style.display = "none";
+// ----------------------------------------------------------------------------------------------------------------------------
+
+    // YG INI YANG WORK JOHNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN (base)
+    // btnHapus.addEventListener("click", () => {
+    //   save.splice(index,1);
+    //   localStorage.setItem("book", JSON.stringify(...arr));
+    //   clearOutput();
+    //   displayBooks();
+    // })
+
+    // INI AMAN JOHNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+    btnHapus.addEventListener("click", () => {
+      modal.style.display = "block";
+      let iya = document.querySelector("#iyah");
+      iya.addEventListener("click", () => {
+        save.splice(index, 1);
+        localStorage.setItem("book", JSON.stringify(...arr));
+        modal.style.display = "none";
+        clearOutput();
+        displayBooks();
+      })
+      let tidak = document.querySelector("#gaa");
+      tidak.addEventListener("click", () => {
+        modal.style.display = "none";
+      })
     })
-    let tidak = document.querySelector("#gaa");
-    tidak.addEventListener("click", () => {
-      modal.style.display = "none";
-    })
+
     btnHapus.type = "button";
     btnHapus.className = "btn-hapus";
     btnHapus.id = "btnHapus";
-    btnHapus.addEventListener("click", () => {
-      modal.style.display = "block";
-    });
-
+// ---------------------------------------------------------------------------------------------------------------------------
     title.innerText = data.title;
     author.innerText = `Author : ${data.author}`;
     year.innerText = `Years : ${data.year}`;
@@ -162,39 +174,26 @@ const searchBooks = () => {
 
       let btnHapus = document.createElement("input");
       let modal = document.querySelector(".modal");
-      let iya = document.querySelector("#iyah");
-      iya.addEventListener("click", () => {
-        clearOutput();
-        searched.innerHTML = `
-        <h3>Cari</h3>
-        <input type="search" name="" id="judulBuku" placeholder="Judul" />
-        <input
-          onclick="searchBooks()"
-          type="button"
-          value="Cari Buku!"
-          id="cari"
-        />
-        `
-        save.splice(index, 1);
-        localStorage.setItem("book", JSON.stringify(...arr));
-        displayBooks();
-        modal.style.display = "none";
-      })
-      let tidak = document.querySelector("#gaa");
-      tidak.addEventListener("click", () => {
-        modal.style.display = "none";
-      })
+      
       btnHapus.type = "button";
       btnHapus.className = "btn-hapus";
       btnHapus.id = "btnHapus";
       btnHapus.addEventListener("click", () => {
         modal.style.display = "block";
-        // clearOutput();
-        // save.splice(index, 1);
-        // localStorage.setItem("book", JSON.stringify(...arr));
-        // displayBooks();
-        // searchBooks();
-      });
+        let iya = document.querySelector("#iyah");
+        iya.addEventListener("click", () => {
+          save.splice(index, 1);
+          localStorage.setItem("book", JSON.stringify(...arr));
+          modal.style.display = "none";
+          clearOutput();
+          displayBooks();
+          searchBooks();
+        })
+        let tidak = document.querySelector("#gaa");
+        tidak.addEventListener("click", () => {
+          modal.style.display = "none";
+        })
+      })
 
       title.innerText = data.title;
       author.innerText = `Author : ${data.author}`;

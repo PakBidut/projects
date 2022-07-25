@@ -5,11 +5,19 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-color: #d3264b;
+}
+
 nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #d3264b;
+}
+
+nav img{
+    width: 250px;
 }
 
 .container{
@@ -38,11 +46,12 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 5px solid #F8F0E3;
     border-radius: 5px;
     min-width: 800px;
     max-width: 800px;
     padding: 1rem;
+    background-color: #e4a96d;
 }
 
 .add-buku * {
@@ -73,7 +82,7 @@ nav{
 
 .sudah-dibaca{
     display: flex;
-    border: 1px solid black;
+    border: 5px solid #F8F0E3;
     border-radius: 5px;
     min-width: 800px;
     max-width: 800px;
@@ -81,11 +90,12 @@ nav{
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    background-color: #e4a96d;
 }
 
 .belum-dibaca{
     display: flex;
-    border: 1px solid black;
+    border: 5px solid #F8F0E3;
     border-radius: 5px;
     min-width: 800px;
     max-width: 800px;
@@ -93,16 +103,18 @@ nav{
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    background-color: #e4a96d;
 }
 
 .books{
-    border: 1px solid black;
+    border: 1px solid #F8F0E3;
     border-radius: 5px;
     min-width: 700px;
     max-width: 700px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background-color: #F8F0E3;
 }
 
 .btn-change {
@@ -132,11 +144,12 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 5px solid #F8F0E3;
     border-radius: 5px;
     min-width: 800px;
     max-width: 800px;
     padding: 1rem;
+    background-color: #e4a96d;
 }
 
 .search #judulBuku {
